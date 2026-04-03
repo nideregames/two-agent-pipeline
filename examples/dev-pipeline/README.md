@@ -6,6 +6,8 @@
 
 Claude.ai планирует и ведёт память проекта. Claude Code исполняет спеки. Vault хранит источник правды.
 
+> Это готовая реализация пайплайна для разработки ПО. Абстрактный фреймворк и гайд по адаптации под другие области — в [корне репозитория](../../README.md).
+
 ---
 
 ## Зачем
@@ -38,11 +40,11 @@ Claude.ai планирует и ведёт память проекта. Claude C
 
 ### Шаг 1: Скилл
 
-Положи папку `dev-pipeline-init/` в `~/.claude/skills/`. Или загрузи `.skill` файл в Claude.ai: Settings → Skills → Upload ZIP.
+Положи папку [`dev-pipeline-init/`](dev-pipeline-init/) в `~/.claude/skills/`. Или загрузи `.skill` файл в Claude.ai: Settings → Skills → Upload ZIP.
 
 ### Шаг 2: Project instructions
 
-Создай новый проект в Claude.ai. Вставь содержимое `project-instructions.md` в Project Instructions.
+Создай новый проект в Claude.ai. Вставь содержимое [`project-instructions.md`](project-instructions.md) в Project Instructions.
 
 ### Шаг 3: Filesystem MCP
 
@@ -50,7 +52,7 @@ Claude.ai планирует и ведёт память проекта. Claude C
 
 ### Шаг 4: Slash command для Claude Code
 
-Создай файл `~/.claude/commands/go.md` — это глобальная команда `/go` для Claude Code. Содержимое есть в пакете (`go.md`). После этого вместо объяснений "прочитай CLAUDE.md, найди спеку" достаточно написать `/go`.
+Создай файл `~/.claude/commands/go.md` — это глобальная команда `/go` для Claude Code. Содержимое — в [`dev-pipeline-init/go.md`](dev-pipeline-init/go.md). После этого вместо объяснений "прочитай CLAUDE.md, найди спеку" достаточно написать `/go`.
 
 ### Шаг 5: Инициализация
 
@@ -202,10 +204,10 @@ vault/
 Claude.ai напишет спек на bugfix с git revert. Ошибка документируется в gotchas.
 
 **Работает ли для не-кодовых задач?**
-Да. Маркетинг, гейм-дизайн, операции — всё это subsystems с такой же структурой знаний. Спеки работают одинаково: "напиши контент-план", "проанализируй конкурентов".
+Да. Маркетинг, гейм-дизайн, операции — всё это subsystems с такой же структурой знаний. Спеки работают одинаково: "напиши контент-план", "проанализируй конкурентов". См. также [гайд по кастомизации](../../docs/customization.md).
 
 **Можно ли улучшать пайплайн?**
 Мелкие улучшения — в любом чате. Структурные изменения — в отдельном мета-проекте.
 
-**Можно ли поделиться?**
-Другу нужны: `user-guide.md` + `project-instructions.md` + папка `dev-pipeline-init/` (или `.skill` zip-файл) + `go.md` (скопировать в `~/.claude/commands/`).
+**Как поделиться с коллегой?**
+Ему нужны: этот README + [`project-instructions.md`](project-instructions.md) + папка [`dev-pipeline-init/`](dev-pipeline-init/) + [`go.md`](dev-pipeline-init/go.md) (скопировать в `~/.claude/commands/`).
