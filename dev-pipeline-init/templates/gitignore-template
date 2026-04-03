@@ -1,0 +1,21 @@
+# Vault .gitignore
+# Safety net: prevent accidental commit of secrets
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Environment and secrets
+*.env
+.env.*
+*.secret
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Obsidian internals (optional — commit if you want to share Obsidian config)
+# .obsidian/workspace.json
+# .obsidian/workspace-mobile.json
