@@ -174,7 +174,7 @@ vault/
 
 ### 2. Настрой PM-агента
 
-Вставь содержимое [`framework/pm-instructions.md`](framework/pm-instructions.md) в инструкции своего PM-агента (например, в Project Instructions в Claude.ai). Адаптируй под свой домен.
+Вставь содержимое [`framework/pm-instructions.md`](framework/pm-instructions.md) в системные инструкции своего PM-агента. Адаптируй под свой домен.
 
 ### 3. Инициализируй vault
 
