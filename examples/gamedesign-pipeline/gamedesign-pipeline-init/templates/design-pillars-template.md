@@ -1,0 +1,26 @@
+# Design Pillars
+
+<!-- Core principles that guide every design decision. If a feature doesn't align with these — it doesn't ship. -->
+<!-- Keep to 3-5 pillars. More than that means none of them are real priorities. -->
+
+## Pillar 1: [Name]
+**We believe**: [one sentence — the principle]
+**This means**: [what we do because of this]
+**This means we DON'T**: [what we explicitly avoid]
+**Example**: [a concrete past or hypothetical decision this pillar drove]
+
+## Pillar 2: [Name]
+**We believe**: ...
+**This means**: ...
+**This means we DON'T**: ...
+**Example**: ...
+
+## Pillar 3: [Name]
+**We believe**: ...
+**This means**: ...
+**This means we DON'T**: ...
+**Example**: ...
+
+## Anti-patterns
+<!-- Things we've seen in competitors or past versions that we explicitly reject -->
+- 
